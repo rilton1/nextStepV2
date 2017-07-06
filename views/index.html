@@ -116,7 +116,7 @@
  </table>
 </fieldset>
 <br />
-<input type="submit">
+<input type="button" onclick="submitForm()" >
 <input type="reset" value="Limpar">
 </form>
 
@@ -129,8 +129,16 @@ function MostrarForm(el1, el2) {
         if(display1 == "none")
         	document.getElementById(el1).style.display = 'block';
         if(display2 == "block")
-            document.getElementById(el2).style.display = 'none';            
-    }
+            document.getElementById(el2).style.display = 'none';
+        
+        ga('send', 'beta-button-click');
+    
+ }
+ 
+function submitForm() {
+    ga('send', 'submit-button-click');
+
+}
 </script>
 
 </body>
