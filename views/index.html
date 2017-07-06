@@ -27,7 +27,7 @@
 	</ul>
 </div>
 
-<button type="button" onclick="MostrarForm('form')">Quero ser beta!</button>
+<button type="button" id="button" style="display: block;"onclick="MostrarForm('form', 'button')">Quero ser beta!</button>
 
 <div id="form" style="display: none;">
 <form action="Script_do_Formulario.php" method="post">
@@ -111,12 +111,13 @@
 </div>
 
 <script>
-function MostrarForm(el) {
-        var display = document.getElementById(el).style.display;
-        if(display == "none")
-            document.getElementById(el).style.display = 'block';
-        else
-            document.getElementById(el).style.display = 'none';
+function MostrarForm(el1, el2) {
+        var display1 = document.getElementById(el1).style.display;
+        var display2 = document.getElementById(el2).style.display;
+        if(display1 == "none")
+        	document.getElementById(el1).style.display = 'block';
+        if(display2 == "block")
+            document.getElementById(el2).style.display = 'none';            
     }
 </script>
 
