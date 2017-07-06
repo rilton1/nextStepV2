@@ -24,7 +24,6 @@
 <div >
 	<img  src="/images/logo.png">
 </div>
-	<h1>Next Step!</h1>
 <div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uhghehlVGo0" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -116,7 +115,7 @@
  </table>
 </fieldset>
 <br />
-<input type="button" onclick="submitForm()" >
+<input type="button"  value="Ok" onclick="submitForm()" >
 <input type="reset" value="Limpar">
 </form>
 
@@ -131,12 +130,12 @@ function MostrarForm(el1, el2) {
         if(display2 == "block")
             document.getElementById(el2).style.display = 'none';
         
-        ga('send', 'beta-button-click');
+        ga('send','event' , 'beta-button-click');
     
  }
  
 function submitForm() {
-    ga('send', 'submit-button-click');
+    ga('send', 'event' ,'submit-button-click');
 
 }
 </script>
