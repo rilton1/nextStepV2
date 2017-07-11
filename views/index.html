@@ -76,10 +76,10 @@
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="images/logo.png" alt="">
+                    <img class="img-responsive" src="images/logo.png" alt="" style="max-height:180px">
                     <div class="intro-text">
                         <hr class="star-light">
-                        <span class="skills"><iframe width="100%" height="315" src="https://www.youtube.com/embed/uhghehlVGo0" frameborder="0" allowfullscreen></iframe></span>
+                        <span class="skills"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/uhghehlVGo0" frameborder="0" allowfullscreen></iframe></span>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="row">
-            <ul>
+            <ul style="font-size:21px">
   		<li>Utilize o poder da nossa plataforma cognitiva para obter indicações de skills com um grau de acerto de 99.9%.</li>
   		<li>Compartilhe as suas conquistas e emerja como um novo profissional</li>
   		<li>Saiba quais as HOT Skills da sua área.</li>
@@ -125,7 +125,6 @@
 
 <!-- DADOS PESSOAIS-->
 <fieldset>
- <legend>Dados Pessoais</legend>
  <table cellspacing="10">
   <tr>
    <td>
@@ -134,33 +133,7 @@
    <td align="left">
     <input type="text" name="email">
    </td>
-   <td>
-    <label for="sobrenome">Sobrenome: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="sobrenome">
-   </td>
   </tr>
-  <tr>
-   <td>
-    <label>Nascimento: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-   <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
-   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
-   </td>
-  </tr>
- </table>
-</fieldset>
-
-<br />
-
-<!-- DADOS DE LOGIN -->
-<fieldset>
- <legend>Dados de login</legend>
- <table cellspacing="10">
-  <tr>
    <td>
     <label for="email">E-mail: </label>
    </td>
@@ -168,35 +141,12 @@
     <input type="text" name="email">
    </td>
   </tr>
-  <tr>
-   <td>
-    <label for="login">Login de usuário: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="login">
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <label for="pass">Senha: </label>
-   </td>
-   <td align="left">
-    <input type="password" name="pass">
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <label for="passconfirm">Confirme a senha: </label>
-   </td>
-   <td align="left">
-    <input type="password" name="passconfirm">
-   </td>
-  </tr>
  </table>
 </fieldset>
+
 <br />
-<input type="submit">
-<input type="reset" value="Limpar">
+<input type="submit" class="btn btn-success btn-lg">
+<input type="reset" value="Limpar" class="btn btn-success btn-lg">
 </form>
                 </div>
             </div>
