@@ -1,7 +1,7 @@
 module.exports = {
   'Sample functional test' : function (browser) {
     browser
-      .url('http://nextstep.mybluemix.net/')
+      .url('http://nextstep-test.mybluemix.net/')
       .waitForElementVisible('#mainNav', 60000, true, function(){
       	console.log('found navBar')
       }, 'Waiting for Search Input to become visible')
