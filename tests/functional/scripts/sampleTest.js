@@ -2,10 +2,10 @@ module.exports = {
   'Sample functional test' : function (browser) {
     browser
       .url('http://nextstep-test.mybluemix.net/')
-      .waitForElementVisible('#mainNav', 60000, true, function(){
-      	console.log('found navBar')
-      }, 'Waiting for Search Input to become visible')
-      .pause(5000)
+      .pause(3000)
+      .waitForElementVisible('#mainNa', 60000)
+      // .setValue('input.gsfi', 'Test')
+      // .waitForElementPresent('#search-pag', 60000)
       .end();
   }
 };
