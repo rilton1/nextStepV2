@@ -3,7 +3,7 @@ module.exports = {
     browser
       .url('http://nextstep-test.mybluemix.net/')
       .pause(3000)
-      .waitForElementVisible('.btn-success', 60000)
+      .waitForElementVisible('#skills', 60000)
       // .setValue('input.gsfi', 'Test')
       // .waitForElementPresent('#search-pag', 60000)
       .end();
